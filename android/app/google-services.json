@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "829803929315",
+    "project_id": "riverpopsicle",
+    "storage_bucket": "riverpopsicle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829803929315:android:3a78a4ac3d2352f4e9afd6",
+        "android_client_info": {
+          "package_name": "com.jackslattery.riverflow.riverflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829803929315-b59lskp810rter6mo59u86eg1v1af86c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjt9uCF4G1-YuziYe2LBCODe4ks17u1Y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829803929315-b59lskp810rter6mo59u86eg1v1af86c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
