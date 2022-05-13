@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:riverflow/main.dart';
+import 'package:riverflow/providers.dart';
 
 class AuthHandler extends HookConsumerWidget {
   final WidgetBuilder authed;
