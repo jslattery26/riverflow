@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverflow/extensions/context_extensions.dart';
 import 'package:riverflow/providers.dart';
@@ -8,9 +9,9 @@ class RegisterView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final email = TextEditingController();
-    final password = TextEditingController();
-
+    final email = useTextEditingController();
+    final password = useTextEditingController();
+    final obscureText = useState(true);
     final authService = ref.watch(authServiceProvider);
 
     return Scaffold(
@@ -31,9 +32,13 @@ class RegisterView extends ConsumerWidget {
             ),
             TextField(
               controller: password,
-              decoration: const InputDecoration(
-                hintText: 'password ==> just type it correctly the first time!',
+              decoration: InputDecoration(
+                hintText: 'password',
+                suffixIcon: Icon(obscureText.value
+                    ? Icons.visibility
+                    : Icons.visibility_off),
               ),
+              obscureText: obscureText.value,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
